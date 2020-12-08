@@ -17,7 +17,7 @@ optimizer = tf.keras.optimizers.Adam()
 
 
 #체크포인트 불러오기
-checkpoint_path = "./checkpoint1/"
+checkpoint_path = "./checkpoints/final_model1"
 ckpt = tf.train.Checkpoint(encoder=encoder,
                            decoder=decoder,
                            optimizer = optimizer)
@@ -73,12 +73,8 @@ def evaluate(image):
 
     return result
 
-from socket import *
-import struct
-import shutil
-import time
-HOST = '210.115.229.4'
-PORT = 9003
+HOST = 'SERVER_IP'
+PORT = 'SERVER_PORT'
 ADDR = (HOST, PORT)
 BUFF_SIZE = 1024
 FILE_NAME = './webcam_transfer/clientFile.jpg'
