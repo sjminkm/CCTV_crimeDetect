@@ -54,5 +54,6 @@ systemctl service를 이용한 자동 부팅 실행 적용할것.
 # 결과
 ## 이미지
 <p align="center"><img src="detect_knife_1.jpg" width="640"\></p>
+
 ## 캡셔닝된 문장
 <p align="center"><img src="send_phone.jpg" width="640"\></p>
