@@ -51,14 +51,6 @@ systemctl service를 이용한 자동 부팅 실행 적용할것.
 ### 6. 문장에 나타난 단어에 따른 위험 안내 서비스
 ### 소스코드의 자세한 내용은 train.ipynb를 참조할것
 
-# 결과
-## 이미지
-<p align="center"><img src="detect_knife_1.jpg" width="640"\></p>
-
-## 캡셔닝된 문장
-<p align="center"><img src="send_phone.jpg" width="640"\></p>
-<br>
-
 # TEST EXAMPLE
 <br>
 <p align="center"><img src="knif1.JPG" width="640"\></p>
