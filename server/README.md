@@ -60,7 +60,7 @@ systemctl service를 이용한 자동 부팅 실행 적용할것.
 <br>
 
 # TEST EXAMPLE
-<br
+<br>
 <p align="center"><img src="knif1.JPG" width="640"\></p>
 
 <br>
