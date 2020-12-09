@@ -57,3 +57,13 @@ systemctl service를 이용한 자동 부팅 실행 적용할것.
 
 ## 캡셔닝된 문장
 <p align="center"><img src="send_phone.jpg" width="640"\></p>
+<br>
+# TEST EXAMPLE
+<br
+<p align="center"><img src="knif1.jpg" width="640"\></p>
+
+<br>
+<p align="center"><img src="f2.jpg" width="640"\></p>
+<br>
+<p align="center"><img src="f3.jpg" width="640"\></p>
+<br>
