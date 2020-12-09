@@ -41,6 +41,30 @@ python TCP_SERVER.py
 ```bash
 systemctl service를 이용한 자동 부팅 실행 적용할것.
 ```
+## 평가지표 와 성능 비교
+### 옵티마이저 선택
+<p align="center"><img src="optimizer.JPG" width="640"\></p>
+#### 학습진행상태가 진행됨에따가 loss의 곡선이 완만해지고있으며
+#### 가장 val_loss와 train_loss의 차이가 적은것은 Nadam인것을 확인할수있다.
+
+### 옵티마이저 성능
+<p align="center"><img src="optimizer_gram_bleu.JPG" width="640"\></p>
+<p align="center"><img src="optimizer_perfomence.JPG" width="640"\></p>
+#### loss가 떨어지는만큼 평가지표의 점수또한 올라가는것을 확인할수있다.
+
+### 한국어와 영어의 차이
+<p align="center"><img src="ko_eng_score.JPG" width="640"\></p>
+#### 해당 부분에대해 할말이 많은데 일단
+#### 한국어의 tonkenizer 부분을 잘못설정하여 제대로된 단어보다 unk태그가 붙은 단어가 훨씬 많이 추출되었다
+#### 그이유는 한국어 형태소 분석 모듈을 사용했어야했는데 실수로 영어 형태소 분석을 사용하여 
+#### 원래대로라면 "사과를 먹다." 를 "사과", "를", "먹다" 로 해야하는것이 옳지만 현재는 "사과를","먹다"로 되어있다.
+#### 이로인해 "사과를","사과에","사과와","사과도" 들이 각각 다른 단어로 인식되어 사전의 개수를 제한해놓은 현재 모델에서
+#### 많은 단어들이 unk태그가 붙어버렸다. 즉 현재  kor와 eng의 성능비교는 잘못되어있다.
+
+### 현재까지 학습의 성능
+<p align="center"><img src="final.JPG" width="640"\></p>
+#### 현재까지도 지속적으로 loss값이 감소되는 모습을 확인중이며 이를 통해 성능이 개선되는중이란것을 알수있었다.
+
 
 # 중요 사항
 ### 1. 문장 정확도 비교를 위한 다양한 문장 유사도 평가함수 적용
